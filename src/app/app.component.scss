@@ -1,6 +1,21 @@
-@import ""
-.legalAdvice{
+@import "../assets/scss/sharedStyles/variables.scss";
+.legalAdvice {
+  direction: rtl;
   height: 100vh;
   width: 100vw;
-  background-color:
+  background-color: $background;
+  overflow-x: hidden;
+  display: flex;
+  position: relative;
+  .sideBarLegal {
+    height: 100%;
+    width: 21%;
+    position: fixed;
+    margin-right: 1%;
+  }
+  .legalAdviceContent {
+    height: 100%;
+    width: 78%;
+    margin-right: 20%;
+  }
 }

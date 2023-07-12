@@ -14,6 +14,7 @@ import { CommonQuestionsComponent } from './mainLayout/mainContent/common-questi
 import { ForumComponent } from './mainLayout/mainContent/forum/forum.component';
 import { SideBarComponent } from './mainLayout/side-bar/side-bar.component';
 import { HeaderComponent } from './mainLayout/header/header.component';
+import { SettingsComponent } from './mainLayout/mainContent/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HeaderComponent } from './mainLayout/header/header.component';
     ForumComponent,
     SideBarComponent,
     HeaderComponent,
+    SettingsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -1,3 +1,17 @@
+@import "../../../assets/scss/sharedStyles/variables.scss";
+.special-pic {
+  display: block;
+  img:nth-of-type(1) {
+    position: absolute;
+    color: #000;
+  }
+  img:nth-of-type(2) {
+    margin-bottom: 12px;
+  }
+}
+.samer {
+  margin-right: 5px;
+}
 .container {
   background-color: #fff;
   width: 100%;
@@ -15,24 +29,32 @@
     width: 100%;
     padding: 0;
     font-family: Almarai;
-    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
     li {
       margin-bottom: 10px;
       margin: 10px 0;
-      font-size: 14px;
+      font-size: 13px;
       display: flex;
       align-items: center;
       border-radius: 50%;
       padding: 5px 0px 5px 30px;
-      text-align: left;
-      // img {
-      //   width: 25px;
-      //   height: 45px;
-      //   display: block;
-      // }
+
+      &:hover,
+      &.active {
+        color: #fff;
+        cursor: pointer;
+        background-color: $primary-color;
+        border-radius: 30px 0 0 30px;
+        margin-left: 20px;
+        transition: all 0.2s ease;
+      }
+
+      img {
+        margin-left: 10px;
+        margin-right: 20px;
+      }
       a {
         display: block;
         text-decoration: none;

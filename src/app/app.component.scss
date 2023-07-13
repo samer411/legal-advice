@@ -1,12 +1,15 @@
 @import "../assets/scss/sharedStyles/variables.scss";
 .legalAdvice {
+  font-family: $font-family;
   direction: rtl;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: $background;
   overflow-x: hidden;
   display: flex;
   position: relative;
+  margin: 0;
+  padding: 0;
   .sideBarLegal {
     height: 100%;
     width: 21%;
@@ -16,6 +19,6 @@
   .legalAdviceContent {
     height: 100%;
     width: 78%;
-    margin-right: 20%;
+    margin-right: 22%;
   }
 }

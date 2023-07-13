@@ -15,6 +15,7 @@ import { ForumComponent } from './mainLayout/mainContent/forum/forum.component';
 import { SideBarComponent } from './mainLayout/side-bar/side-bar.component';
 import { HeaderComponent } from './mainLayout/header/header.component';
 import { SettingsComponent } from './mainLayout/mainContent/settings/settings.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,22 @@ import { SettingsComponent } from './mainLayout/mainContent/settings/settings.co
     HeaderComponent,
     SettingsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot([
+      { path: 'control-pannel', component: ControlPannelComponent },
+      { path: 'profile', component: ProfileComponent },
+      { path: 'consultations', component: ConsultationsComponent },
+      { path: 'reservation', component: ReservationComponent },
+      { path: 'videos', component: VideosComponent },
+      { path: 'news-feed', component: NewsFeedComponent },
+      { path: 'dictionary', component: DictionaryComponent },
+      { path: 'common-questions', component: CommonQuestionsComponent },
+      { path: 'forum', component: ForumComponent },
+      { path: 'settings', component: SettingsComponent },
+    ]),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
